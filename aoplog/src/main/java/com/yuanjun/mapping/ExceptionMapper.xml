@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yuanjun.dao.ExceptionLogDao" >
+  
+  <insert id="saveExceptionLog" parameterType="com.yuanjun.bean.ExceptionLog">
+  	insert into exceptionlog(ip,url,args,className,methodName,exceptionType
+  	,exceptionTime,exceptionMsg,isView)values(#{ip},#{url},#{args},
+  	#{className},#{methodName},#{exceptionType},#{exceptionTime},#{exceptionMsg},#{isView})
+  </insert>
+  
+</mapper>

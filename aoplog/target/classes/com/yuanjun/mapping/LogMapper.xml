@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yuanjun.dao.LogDao" >
+  
+  <insert id="insertLog" parameterType="com.yuanjun.bean.Log">
+  	insert into log(ip,operateUserName,operationName,operationType,operationDate,
+  	operationTime,state,description) values(#{ip},#{operateUserName},#{operationName},
+  	#{operationType},#{operationDate},#{operationTime},#{state},#{description})
+  </insert>
+  
+</mapper>
